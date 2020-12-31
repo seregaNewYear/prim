@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Учебная страница примера</title>
+    <link rel="stylesheet" href="../css/index.css">
+
+</head>
+
+<body>
+    <table class="cmenu">
+        <tr>
+            <td class="cmenu_td"> <img src=../img/sv.jpg alt="logo"></td>
+            <td class="cmenu_td">
+                <ul class="cmenu_ul">
+                    <li><a href="../index.html">Фотографии</a></li>
+                    <li><a href="../index.html#bash">Башкирия</a></li>
+                    <li><a href="../index.html#birds">Птицы</a></li>
+                    <li><a href="../index.html#macro">Макро</a></li>
+                    <li>Разное</li>
+                    <li>О сайте</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+
+    <h1>Пара</h1>
+
+
+
+    <p class="cpimg"> <img class="cimg" src="01mm.JPG" alt="Пара"> </p>
+    <p></p>
+    <h3>Пара</h3>
+    <p class="cb"> <a href="../index.html"> Назад к работам</a> </p>
+
+    <table class="podval">
+        <tr>
+            <td>
+                <p>© </p>
+            </td>
+            <td>
+                <p> колледж</p>
+            </td>
+            <td>
+                <p> Учебный сайт</p>
+            </td>
+            <td>
+                <p> О нас</p>
+            </td>
+        </tr>
+    </table>
+
+
+    <script>
+        function random(min, max) {
+
+            var rand = min + Math.random() * (max + 1 - min);
+            rand = Math.floor(rand);
+
+            return rand;
+
+        }
+
+        for (var i = 0; i < 200; i++) {
+
+            document.getElementsByTagName('body')[0].innerHTML += '<i class="rain" style="left: ' + random(-2000, 2000) + 'px;transform: translate3d(0, 0, 0);animation-delay: ' + (0.01 * i) + 's"></i>';
+
+        }
+
+    </script>
+
+</body>
+
+</html>
